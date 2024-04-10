@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Benjamin Todd">
+        <meta name="description" content="Commander Central">
+        <title>Commander Central: Best Commanders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="logo1.ico">    
+    </head>
+        <body>
+        <header>
+            <div class="logo1"><img src="logo1.png" alt="site logo" height="39"> </div>
+                <h1>Commander Central</h1>
+            </header>
+            <!--Start of my navigation-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main Page</a></li>
+                    <li><a href="preconhub.html">Precon Hub</a></li>
+                    <li><a href="userdecks.html">User Submitted Decks</a>
+                    <li class="active"><a href="contactus.html">Submit A Deck</a></li>
+                </ul>
+            </nav>
+
+            <main>
+
+            <!--Start of my page content-->
+                <div class="page"><h1>Submit A Deck</h1></div>
+                        <!--Form Information Here-->
+    <form method="get" class="myform" action="thanks.html">
+        <fieldset>
+            <legend>Deck Information</legend>
+            <label>Name: <input type="text" name="name" required> </label>
+            <label>Deck Name: <input type="text" name="deckname" required> </label>
+            <label>Deck Link: <input type="text" name="decklink" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>Phone Number: <input type="tel" name="telephone" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Deck Strength</legend>
+            <label><input type="radio" name="power" value="lowpower" required> Low Power </label>
+            <label><input type="radio" name="power" value="casual" required> Casual </label>
+            <label><input type="radio" name="power" value="highpower" required> High Power </label>
+            <label><input type="radio" name="power" value="cedh" required> CEDH Level </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Commander Colors</legend>
+            <label><input type="checkbox" name="white" value="white"> White </label>
+            <label><input type="checkbox" name="blue" value="blue"> Blue </label>
+            <label><input type="checkbox" name="black" value="black"> Black </label>
+            <label><input type="checkbox" name="red" value="red"> Red </label>
+            <label><input type="checkbox" name="green" value="green"> Green </label>
+            <label><input type="checkbox" name="colorless" value="colorless"> Colorless </label>
+        </fieldset>
+        
+        <fieldset> 
+            <legend>Typal</legend>
+            <label><select name="time">
+                <option value="none">Not A Typal Deck</option>
+                <option value="dragon">Dragons</option>
+                <option value="elf">Elves</option>
+                <option value="zombie">Zombies</option>
+                <option value="vampire">Vampires</option>
+                <option value="human">Humans</option>
+                <option value="goblin">Goblin</option>
+                <option value="dinosaur">Dinosaur</option>
+                <option value="sliver">Sliver</option>
+                <option value="Angel">Angel</option>
+                <option value="Merfolk">Merfolk</option>
+                </select>
+                </label>
+        </fieldset>
+        
+        <fieldset> 
+            <legend>Archetype</legend>
+            <label><select name="time">
+                <option value="none">Not Applicable</option>
+                <option value="artifact">Artifacts</option>
+                <option value="treasure">Treasures</option>
+                <option value="lifegain">Life Gain</option>
+                <option value="11counters">+1/+1 Counters</option>
+                <option value="equipment">Equipment</option>
+                <option value="token">Token</option>
+                <option value="wheel">Wheel</option>
+                <option value="aristocrat">Aristocrat</option>
+                <option value="spellslinger">Spellslinger</option>
+                <option value="lands">Lands</option>
+                </select>
+                </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Deck Playstyle</legend>
+            <label><input type="checkbox" name="grouphug" value="grouphug"> Group Hug </label>
+            <label><input type="checkbox" name="groupslug" value="groupslug"> Group Slug </label>
+            <label><input type="checkbox" name="chaos" value="chaos"> Chaos </label>
+            <label><input type="checkbox" name="combo" value="combo"> Combo </label>
+            <label><input type="checkbox" name="control" value="control"> Control </label>
+            <label><input type="checkbox" name="aggro" value="aggro"> Aggro </label>
+            <label><input type="checkbox" name="midrange" value="midrange"> Mid Range </label>
+            <label><input type="checkbox" name="ramp" value="ramp"> Ramp </label>
+            <label><input type="checkbox" name="altwincon" value="altwincon"> Alternate Win Cons </label>
+            <label><input type="checkbox" name="voltron" value="voltron"> Voltron </label>
+        </fieldset>
+
+
+        <label class="comments">Comments: <textarea name="comments">Any Additional Information</textarea></label>
+        
+        <input type="submit" value="Submit Deck">
+    </form>        
+    </main>
+            <!--Start of My Footer-->
+            <footer>
+                <p>&copy; 2024 | Benjamin Todd | <a href="sampleemail@gmail.com">Email Here </a></p>
+
+            </footer>
+
+        </body>
+
+</html>
