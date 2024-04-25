@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Benjamin Todd">
+        <meta name="description" content="Commander Central">
+        <title>Commander Central</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="logo.ico">        
+    </head>
+        <body>
+        <header>
+            <div class="logo"><img src="logo.png" alt="site logo" height="39"> </div>
+            <h1>Budget Vacations</h1>
+        </header>
+        <!--Start of my navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li class="active"><a href="contactus.html">Contact Us</a>
+            </ul>
+        </nav>
+
+        <!--Start of my page content-->
+    <main>   
+        <h1>Travel Submission</h1>
+        <form method="get" class="myform" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Name: <input type="text" name="name" required> </label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Phone Number: <input type="tel" name="telephone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Package Selection</legend>
+                <label><input type="radio" name="package" value="guild initiate" required> Guild Initiate </label>
+                <label><input type="radio" name="package" value="guildmage" required> Guild Mage </label>
+                <label><input type="radio" name="package" value="guildmaster" required> Guild Master </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Package Selection</legend>
+                <label><input type="radio" name="week" value="week1" required> Week 1 </label>
+                <label><input type="radio" name="week" value="week2" required> Week 2 </label>
+                <label><input type="radio" name="week" value="week3" required> Week 3 </label>
+                <label><input type="radio" name="week" value="week4" required> Week 4 </label>
+            </fieldset>
+
+            <fieldset> 
+                <legend>Month To Travel</legend>
+                <label><select name="time">
+                    <option value="seleszeni">Seleszeni</option>
+                    <option value="dhazo">Dhazo</option>
+                    <option value="prahz">Prahz</option>
+                    <option value="mokosh">Mokosh</option>
+                    <option value="paujal">Paujal</option>
+                    <option value="cizarm">Cizarm</option>
+                    <option value="tevnember">Tevnember</option>
+                    <option value="golgar">Golgar</option>
+                    <option value="quaegar">Quaegar</option>
+                    <option value="xavaskir">Xavaskir</option>
+                    <option value="griev">Griev</option>
+                    <option value="zuun">Zuun</option>
+                    </select>
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Guild Choice</legend>
+                <label><input type="checkbox" name="azorius" value="azorius"> Azorius Senate </label>
+                <label><input type="checkbox" name="boros" value="boros"> Boros Legion </label>
+                <label><input type="checkbox" name="rakdos" value="rakdos"> Cult of Rakdos </label>
+                <label><input type="checkbox" name="golgari" value="golgari"> Golgari Swarm </label>
+                <label><input type="checkbox" name="gruul" value="gruul"> Gruul Clans </label>
+                <label><input type="checkbox" name="dimir" value="dimir"> House Dimir </label>
+                <label><input type="checkbox" name="izzet" value="izzet"> Izzet League </label>
+                <label><input type="checkbox" name="orzhov" value="orzhov"> Orzhov Syndicate </label>
+                <label><input type="checkbox" name="selesneya" value="selesneya"> Selesneya Conclave </label>
+                <label><input type="checkbox" name="simic" value="simic"> Simic Combine </label>
+            </fieldset>
+    
+            <label class="comments">Comments: <textarea name="comments">Comments or Concerns</textarea></label>
+            
+            <input type="submit" value="Submit Deck">
+        </form> 
+
+    </main>
+
+<!--Start of My Footer-->
+        
+    <footer>
+        <p>&copy; 2024 | Budget Vacation | <a href="sampleemail@gmail.com">Email Here </a></p>
+
+    </footer>
+
+</body>
+</html>
